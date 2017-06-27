@@ -1,0 +1,6 @@
+{% extends "home/header.html" %}
+{% block content %}
+	{% for post in object_list %}
+		<h3><a href="/contact_us/{{post.id}}">  {{ post.title }}</a></h3>
+	{% endfor %}
+{% endblock %}

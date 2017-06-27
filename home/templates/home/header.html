@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+
+  <title>Entrance Buddies</title>
+
+
+   {% load staticfiles %}
+  <!-- CSS  -->
+    <link href="{% static 'home/css/materialize.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+  <link href="{% static 'home/css/style.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+
+
+ 
+</head>
+
+
+
+
+<body>
+
+ 
+ 
+ <nav class="light-blue lighten-1" role="navigation">
+
+    <div class="nav-wrapper container"><a id="logo-container" href="/" class="brand-logo"><img src="{% static 'home/img/logo.jpg' %}"></a>
+
+     <ul id="nav-mobile" class="side-nav">
+
+        <li><a href = "/">Home</a></li>
+        <li><a href="/physics">Physics</a></li>
+        <li><a href="/chemistry">Chemistry</a></li>
+        <li><a href="/maths">Maths</a></li>
+        <li><a href="#">Motivation</a></li>
+        <li><a href = "/previous_paper">Previous Paper</a></li>
+        <li><a href = "/contact_us">Contact Us</a></li>      
+      </ul>
+
+     
+
+ 
+     <ul class="right hide-on-med-and-down">
+
+         <li><a href = "/">Home</a></li>
+         <li><a class="dropdown-button" href="#!" data-activates="dropdown1" >Tutorials</a></li>
+                  <ul id="dropdown1" class="dropdown-content">
+                    <li><a href="/physics">Physics</a></li>
+                    <li><a href="/chemistry">Chemistry</a></li>
+                    <li><a href="/maths">Maths</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Motivation</a></li>
+                   </ul>
+        <li><a href = "/previous_paper">Previous Paper</a></li>
+        <li><a href = "/contact_us">Contact Us</a></li>
+          
+      </ul>
+
+
+           </div>
+  </nav>
+        
+      
+      <a href="#" data-activates="nav-mobile" class="button-collapse">Menu</a>
+
+    </div>
+
+  </nav>
+
+  
+
+
+
+
+ {% block content %}
+ {% endblock %}
+  
+
+
+
+
+  <footer class="page-footer orange">
+
+    <div class="container">
+            <p><a class="white-text" href="#!">Facebook</a>          |    <a class="white-text" href="#!">Google</a>         |          <a class="white-text" href="#!">Twitter</a>                |            <a class="white-text" href="#!">Blog</a>
+
+<br><br></p>
+    </div>        
+
+      </footer>
+ <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+
+  <script src="{% static 'home/js/materialize.js' %}"></script>
+
+  <script src="{% static 'home/js/init.js' %}">
+  </script>
+
+
+
+
+
+
+</body>
+
+</html>
